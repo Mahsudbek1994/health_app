@@ -43,7 +43,7 @@ class OnboardingPage extends StatelessWidget {
                                child: Text(
                                 controller.onboardingPage[index].description,
                                 textAlign: TextAlign.center,
-                                style: TextStyle(fontSize: 20, height: 1.5),
+                                style: TextStyle(fontSize: 18, height: 1.5),
                               ),
                             ),
                           ]),
@@ -68,7 +68,7 @@ class OnboardingPage extends StatelessWidget {
                 )),
               ),
             ),
-         
+
           ],
         ),
       ),
