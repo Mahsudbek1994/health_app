@@ -1,11 +1,14 @@
+import 'package:flutter/material.dart';
 import '../models/onboarding_info.dart';
 import 'package:get/state_manager.dart';
-
+import 'package:get/get.dart';
 class OnboardingController extends GetxController {
-  var selectedPAgeIndex = 0.obs;
+  var selectedPageIndex = 0.obs;
+  var pageController = PageController();
+
+
+
   List<OnboardingInfo> onboardingPage = [
-    OnboardingInfo('E-health', 'assets/images/svg1.svg',
-        'E-health sizga sog’lom vazin yo‘qotishga yordam beradi.'),
     OnboardingInfo('E-health', 'assets/images/svg2.svg',
        'Kundalik mashqlarni muntazam yo‘lga qo‘yishingiz uchun'),
     OnboardingInfo('E-health', 'assets/images/svg.3.svg',
