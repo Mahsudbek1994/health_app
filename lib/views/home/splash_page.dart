@@ -14,16 +14,12 @@ class SplashPage extends StatelessWidget {
             padding: EdgeInsets.only(top: 240),
             child: SvgPicture.asset('assets/images/svg1.svg')),
         SizedBox(height: 80),
-        Padding(
-          padding: const EdgeInsets.only(left: 30, right: 30),
-          child: Text(
-            'E-health sizga sog’lom vazin yo‘qotishga yordam beradi.',
-            style: TextStyle(
-              fontSize: 18,
-              height: 2
-            ),
-            textAlign: TextAlign.center,
-          ),
+        Text(
+          'E-health sizga sog’lom vazin yo‘qotishga yordam beradi.',
+          style: TextStyle(
+            color:Color(0xFF333333),
+            fontSize: 20, height: 1.4,),
+          textAlign: TextAlign.center,
         ),
         SizedBox(
           height: 140,

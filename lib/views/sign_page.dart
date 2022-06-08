@@ -16,19 +16,16 @@ class SignPage extends StatelessWidget {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-              Color.fromRGBO(231, 188, 152, 1.0),
-              Color.fromRGBO(246, 228, 194, 1),
+                Color.fromRGBO(246, 228, 194, 0),
+            Color.fromRGBO(245, 245, 245, 1),
             ])),
         child: Column(
           children: [
-            const Padding(
+             Padding(
                 padding: EdgeInsets.only(top: 46),
-                child: Text(
-                  'E-health',
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
-                )),
+                child: SvgPicture.asset('assets/images/svg1.svg',
+                height: 30                                                                                   ,width: 30,),),
+
             const SizedBox(
               height: 10,
             ),
@@ -64,6 +61,7 @@ class SignPage extends StatelessWidget {
                 ),
                 onPressed: () {
                   Get.toNamed('/registration_page');
+
                 },
               )),
             )

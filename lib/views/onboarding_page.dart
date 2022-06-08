@@ -23,19 +23,16 @@ class OnboardingPage extends StatelessWidget {
                   return Container(
                     decoration: const BoxDecoration(
                         gradient: LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomLeft,
                             colors: [
-                          Color.fromRGBO(246, 228, 194, 0),
-                          Color.fromRGBO(245, 245, 245, 1),
+                          Color.fromRGBO(246, 228, 194, 1),
+                              Colors.white,
                         ])),
                     child: Center(
                       child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
-                              _controller.onboardingPage[index].title,
-                            ),
                             SvgPicture.asset(
                               _controller.onboardingPage[index].imageAsset,
                             ),
@@ -80,7 +77,7 @@ class OnboardingPage extends StatelessWidget {
               color:Color(0xFFE5BF4C),
               child: Text('Keyingisi',
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 20,
                 color: Color(0xFFFFFFFF)
               ),),
               onPressed:(){
