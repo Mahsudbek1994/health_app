@@ -1,5 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.health_app1">
+
+    <uses-permission android:name="anroid.permission.CAMERA"/>
+    <uses-permission android:name="anroid.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="anroid.permission.READ_EXTERNAL_STORAGE"/>
    <application
         android:label="health_app1"
         android:name="${applicationName}"

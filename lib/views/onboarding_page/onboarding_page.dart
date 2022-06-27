@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
 import 'package:health_app1/controllers/onboarding_controller.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:health_app1/views/sign_page.dart';
+import 'package:health_app1/views/sign_page/sign_page.dart';
 
 class OnboardingPage extends StatelessWidget {
   final _controller = OnboardingController();
