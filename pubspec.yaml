@@ -22,15 +22,22 @@ dependencies:
   get: ^4.6.5
   intl_phone_field: ^3.1.0
   fancy_bottom_navigation: ^0.3.3
+  share: ^2.0.4
+  flutter_launcher_icons: ^0.9.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^2.0.0
+flutter_icons:
+  android: "im_icons_app"
+  ios: true
+  image_path: "assets/im_icons_app.png"
+  adaptive_icon_background: #ffffff
+  adaptive_icon_foreground: "assets/icons.png"
 
 flutter:
-
   uses-material-design: true
 
   assets:

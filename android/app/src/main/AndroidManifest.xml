@@ -5,9 +5,9 @@
     <uses-permission android:name="anroid.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="anroid.permission.READ_EXTERNAL_STORAGE"/>
    <application
-        android:label="health_app1"
+        android:label="E-health"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/im_icons_app">
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -13,7 +13,6 @@ class UserRegistration extends StatefulWidget {
 class _UserRegistrationState extends State<UserRegistration> {
   @override
   Widget build(BuildContext context) {
-    int _value = 0;
     return Scaffold(
       body:SafeArea(
 
@@ -35,7 +34,7 @@ class _UserRegistrationState extends State<UserRegistration> {
             mainAxisAlignment: MainAxisAlignment.center,
             children:<Widget> [
               GestureDetector(
-                onTap: () =>Get.to(UserInfoRegistration()),
+                onTap: () =>Get.toNamed( '/user_info'),
                 child: Container(
                   child: SvgPicture.asset('assets/images/erkak.svg',
                   height: 119,
@@ -44,7 +43,7 @@ class _UserRegistrationState extends State<UserRegistration> {
               ),
               SizedBox(width: 18),
               GestureDetector(
-                onTap: () => Get.to(UserInfoRegistration()),
+                onTap: () => Get.toNamed(('/user_info')),
                 child: Container(
                   child: SvgPicture.asset('assets/images/ayol.svg',
                     height: 119,

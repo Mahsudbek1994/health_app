@@ -21,7 +21,7 @@ class DietologRegistrationPage extends StatelessWidget {
   DegreePicker degreePicker = Get.put(DegreePicker());
   PhonePicker phonePicker = Get.put(const PhonePicker());
   WorkPicker workPicker = Get.put(WorkPicker());
-  HomePage homePage = Get.put(HomePage());
+  Home homePage = Get.put(Home());
 
   DatePick datePick = Get.put(DatePick());
   MonthPicker monthPicker = Get.put(MonthPicker());

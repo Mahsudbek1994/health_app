@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class UserInfoRegistration extends StatelessWidget {
   const UserInfoRegistration({Key? key}) : super(key: key);
@@ -142,7 +143,9 @@ class UserInfoRegistration extends StatelessWidget {
 
                 Padding(
                   padding: const EdgeInsets.only(left: 24, right: 24),
-                  child: MaterialButton(onPressed: (){},
+                  child: MaterialButton(onPressed: (){
+                    Get.toNamed('registration_page');
+                  },
                     height: 60,
                     child: Text('Davom etish',
                     style: TextStyle(

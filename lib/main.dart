@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:health_app1/views/home/home.dart';
+import 'package:health_app1/views/registration/user/user_info/user_info.dart';
 import 'package:health_app1/views/splash/splash_page.dart';
 import 'package:health_app1/views/onboarding_page/onboarding_page.dart';
 import 'package:health_app1/views/registration/dietolog/dietolog_registration.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SplashPage(),
       getPages: [
-        GetPage(name: '/home_page', page: () => HomePage()),
+        GetPage(name: '/home_page', page: () => Home()),
         GetPage(name: '/sign_page', page: () => SignPage()),
         GetPage(name: '/onboarding_page', page: () => OnboardingPage()),
         GetPage(name: '/sign_up_page', page: () => SignupPage()),
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/user_registration', page: () => UserRegistration()),
         GetPage(name: '/user_info_registration', page: ()=> UserInfoRegistration()),
         GetPage(name:'/dietolog_registration', page: () =>DietologRegistrationPage(),),
-
+        GetPage(name: '/user_info', page: () => UserInfo()),
       ],
 
     );
