@@ -47,7 +47,8 @@ class SignPage extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: const Text('Kirish'),
+                child: const Text('Kirish',
+                style: TextStyle(color: Colors.white),),
               )),
             ),
             const SizedBox(height: 10),
@@ -60,7 +61,7 @@ class SignPage extends StatelessWidget {
                   style: TextStyle(color: Color(0xFF341D05)),
                 ),
                 onPressed: () {
-                  Get.toNamed('/registration_page');
+                  Get.toNamed('/user_info_registration');
 
                 },
               )),
